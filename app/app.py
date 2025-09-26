@@ -1,11 +1,8 @@
 
-# Simple Chainlit app using local Ollama (llama3:8b)
 import chainlit as cl
 from langchain_ollama import ChatOllama
 from langchain_core.messages import HumanMessage
 
-
-# Configure the Ollama chat model (assumes Ollama is running locally)
 llm = ChatOllama(model="llama3:8b")
 
 @cl.on_message
